@@ -10,8 +10,8 @@
 2. Promoted the Headers
 3. Removed the 'Null' values
 4. Removed duplicates and blank rows
-5. Seperate the column using delimiter(Product Name)
-6. Removed the unwanted column(Product Name has been seperated by delimiter and removed the newly created column)
+5. Seperate the column using first most delimiter("comma")(Product Name)
+6. Removed the unwanted column(Product Name has been seperated by delimiter"(comma") and removed the newly created column)
 7. Cahnged the data type column(Postal Code)
-8. Replaced the empty cell to 'Unspecified'(In 'Postal Code')
+8. Replaced the empty cell to 'Unknown'(In 'Postal Code')
 9. Reordered the column('Returned')
