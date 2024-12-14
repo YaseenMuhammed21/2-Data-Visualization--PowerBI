@@ -6,20 +6,12 @@
 
 #### 3 Sheets has been found in the workbook named as Orders, People and Return.
 
-Loaded the 'Global Superstore' file into Power Query to transform and load into Power BI for further process
-
-Promoted the Headers
-
-Removed the 'Null' values
-
-Removed duplicates and blank rows
-
-Seperate the column using delimiter(Product Name)
-
-Removed the unwanted column(Product Name has been seperated by delimiter and removed the newly created column)
-
-Cahnged the data type column(Postal Code)
-
-Replaced the empty cell to 'Unspecified'(In 'Postal Code')
-
-Reordered the column('Returned')
+1. Loaded the 'Global Superstore' file into Power Query to transform and load into Power BI for further process
+2. Promoted the Headers
+3. Removed the 'Null' values
+4. Removed duplicates and blank rows
+5. Seperate the column using delimiter(Product Name)
+6. Removed the unwanted column(Product Name has been seperated by delimiter and removed the newly created column)
+7. Cahnged the data type column(Postal Code)
+8. Replaced the empty cell to 'Unspecified'(In 'Postal Code')
+9. Reordered the column('Returned')
