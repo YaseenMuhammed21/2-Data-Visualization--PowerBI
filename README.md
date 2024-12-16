@@ -39,4 +39,11 @@ Filter and Returns to Orders as One To One with Both Filter)
 ##
     Rounded Profit = ROUND(DIVIDE(Orders[Profit], Orders[Sales]) * 100, 2)
 
-13.
+13. Created the new measures for 'Total Sale'
+##
+    Total Sale = SUM(Orders[Sales])
+
+14. Created the column to find the difference between the 'Order Date' and the 'Ship Date'
+##
+    Shipment Duration = DATEDIFF(Orders[Order Date],Orders[Ship Date],DAY)
+
