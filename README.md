@@ -34,3 +34,9 @@ Filter and Returns to Orders as One To One with Both Filter)
 11. Created new table named as "Sales and Profit in Returned Items" to find the profit from the returned item where which the 'Orders' table and the 'Return' related One to One and 'Bi-Direction'
 ##
     Sales and Profit in Returned Items = SELECTCOLUMNS(Returns,"Order ID",Returns[Order ID],"Returned",Returns[Returned],"Sales",RELATED(Orders[Sales]),"Profit",RELATED(Orders[Profit]))
+
+12. Added a column in Orders table as 'Rounded Profit'
+##
+    Rounded Profit = ROUND(DIVIDE(Orders[Profit], Orders[Sales]) * 100, 2)
+
+13.
