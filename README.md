@@ -6,12 +6,26 @@
 
 #### 3 Sheets has been found in the workbook named as Orders, People and Return.
 
-1. Loaded the 'Global Superstore' file into Power Query to transform and load into Power BI for further process
-2. Promoted the Headers
-3. Removed the 'Null' values
-4. Removed duplicates and blank rows
-5. Seperate the column using first most delimiter("comma")(Product Name)
-6. Removed the unwanted column(Product Name has been seperated by delimiter("comma") and removed the newly created column)
-7. Cahnged the data type column(Postal Code)
-8. Replaced the empty cell to 'Unknown'(In 'Postal Code')
-9. Reordered the column('Returned')
+Loaded the 'Global Superstore' file into Power Query to transform and load into Power BI for further process
+
+Promoted the Headers
+
+Removed the 'Null' values
+
+Removed duplicates and blank rows
+
+Seperate the column using delimiter(Product Name)
+
+Removed the unwanted column(Product Name has been seperated by delimiter and removed the newly created column)
+
+Reordered the column('Returned')
+
+Created the relationship between Given Table(Orders to People as Many to One with Single  
+Filter and Returns to Orders as One To One with Both Filter)
+
+Created new Table in correspondance with Orders table as "Profit Margin"
+
+'Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))'
+
+
+YourCopyableTextblock       Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))
