@@ -30,3 +30,7 @@ Filter and Returns to Orders as One To One with Both Filter)
 10. Created new table to find the 'Profit' and 'Shipment cost' ratio as "Profit to Shipping Cost Ratio" with column named as 'Profit to Shipping Cost Ratio'
 ##
     Profit to Shipping Cost Ratio = ADDCOLUMNS(Orders,"Profit to Shipping Cost Ratio",IF(Orders[Shipping Cost]<>0,Orders[Profit]/Orders[Shipping Cost],0))
+
+11. Created new table named as "Sales and Profit in Returned Items" to find the profit from the returned item where which the 'Orders' table and the 'Return' related One to One and 'Bi-Direction'
+##
+    Sales and Profit in Returned Items = SELECTCOLUMNS(Returns,"Order ID",Returns[Order ID],"Returned",Returns[Returned],"Sales",RELATED(Orders[Sales]),"Profit",RELATED(Orders[Profit]))
