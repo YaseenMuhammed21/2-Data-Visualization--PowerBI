@@ -25,7 +25,7 @@ Filter and Returns to Orders as One To One with Both Filter)
 
 9. Created new table in correspondance with Orders table as "Profit Margin" with the column named as 'Profit Margin' and 'Profit Category'
 ##
-    Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))
+    Profit Margin = ADDCOLUMNS(SELECTCOLUMNS(Orders,"Order",Orders[Order ID],"Sale",Orders[Sales],"Profit",Orders[Profit]),"Profit Margin",IF([Sale]<>0,([Profit]/[Sale])*100,0),"Profit Category",IF(IF([Sale]<>0,([Profit]/[Sale])*100,0)>=50,"Higher Profit","Lower Profit"))
 
 10. Created new table to find the 'Profit' and 'Shipment cost' ratio as "Profit to Shipping Cost Ratio" with column named as 'Profit to Shipping Cost Ratio'
 ##
