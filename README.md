@@ -28,4 +28,5 @@ Created new Table in correspondance with Orders table as "Profit Margin"
 'Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))'
 
 
-YourCopyableTextblock    Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))
+##
+    Profit Margin = ADDCOLUMNS(Orders,"Profit Margin",IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales]) * 100, 0),"Profit Category",IF(IF(Orders[Sales]<>0,(Orders[Profit]/Orders[Sales])*100,0)>=50,"Higher Profit","Lower Profit"))
