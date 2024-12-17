@@ -44,6 +44,9 @@ Filter and Returns to Orders as One To One with Both Filter)
 5. Created the new measures for 'Total Sale'
 ##
     Total Sale = SUM(Orders[Sales])
+6. Created new table 'Sales Over Location'
+##
+    Sales Over Location = SELECTCOLUMNS(Orders,"order ID",Orders[Order ID],"Category",Orders[Category],"sales",Orders[Sales],"City",Orders[City],"Country",Orders[Country],"Region",Orders[Region],"Profit",Orders[Profit])
 
 6. Created the column to find the difference between the 'Order Date' and the 'Ship Date'
 ##
