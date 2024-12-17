@@ -52,3 +52,14 @@ Filter and Returns to Orders as One To One with Both Filter)
 ##
     Shipment Duration = DATEDIFF(Orders[Order Date],Orders[Ship Date],DAY)
 
+8. Created the measures 'Profit Percentage'
+##
+    Profit Percentage = DIVIDE(SUM('Profit Margin'[Profit]),SUM('Profit Margin'[Sale]))*100
+
+### Visualization
+
+1. Created the visual for Performance By Person to get the visualization of individual Sale Person
+2. Created the visual to study Market across the world
+3. Created the visual to study the Shipment scenario across the sale
+4. Created the visual for market drill down to know the area to increase the sale
+5. Created the Summary for the project
