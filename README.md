@@ -48,7 +48,7 @@ Filter and Returns to Orders as One To One with Both Filter)
 ##
     Sales Over Location = SELECTCOLUMNS(Orders,"order ID",Orders[Order ID],"Category",Orders[Category],"sales",Orders[Sales],"City",Orders[City],"Country",Orders[Country],"Region",Orders[Region],"Profit",Orders[Profit])
 
-6. Created the column to find the difference between the 'Order Date' and the 'Ship Date'
+7. Created the column to find the difference between the 'Order Date' and the 'Ship Date'
 ##
     Shipment Duration = DATEDIFF(Orders[Order Date],Orders[Ship Date],DAY)
 
