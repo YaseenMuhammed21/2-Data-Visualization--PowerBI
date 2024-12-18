@@ -64,4 +64,8 @@ Filter and Returns to Orders as One To One with Both Filter)
 4. Created the visual for market drill down to know the area to increase the sale
 5. Created the Summary for the project
 
-## We have used Stacked Bar Chart, Clustered Column Chart, Card, Slicer, Map, Line and Clustered Column Chart, Tree Map, Matrix, Scatter Chart and Gauge Chart, 
+## We have used Stacked Bar Chart, Clustered Column Chart, Card, Slicer, Map, Line and Clustered Column Chart, Tree Map, Matrix, Scatter Chart and Gauge Chart
+
+### Please find the video for visualization
+##
+    https://drive.google.com/file/d/1sX0O_B_B5lljyR2BdZvjDTO3xGbEZ-XJ/view?usp=drive_link
