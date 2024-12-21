@@ -1,6 +1,6 @@
 # 2-Data Visualization
 
-## This assignment is about data transfoprmation and Visualization of a 'Global Superstore' using Power Query and Power BI
+## This assignment is about data transformation and visualization of a 'Global Superstore' using Power Query and Power BI
 
 ### Steps has been completed in the process.
 
